@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.example.assignment5.MyDrawingArea
+        android:layout_width="150pt"
+        android:layout_height="60pt"
+        android:layout_marginTop="5pt"
+        android:layout_gravity="center"
+        android:id="@+id/myDrawingArea" />
+
+    <LinearLayout
+        android:layout_width="150pt"
+        android:layout_height="40pt"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="50pt"
+            android:layout_height="25pt"
+            android:textSize="12pt"
+            android:text="Tags:"
+            android:onClick="getTags"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            />
+
+
+        <EditText
+            android:layout_width="100pt"
+            android:layout_height="30pt"
+            android:id="@+id/sketchCreateTags"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150pt"
+        android:layout_height="40pt"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="70pt"
+            android:layout_height="35pt"
+            android:text="Clear"
+            android:textSize="12pt"
+            android:layout_marginRight="10pt"
+            android:backgroundTint="@android:color/holo_purple"
+            android:onClick="clearDrawing"
+            />
+
+        <Button
+            android:layout_width="70pt"
+            android:layout_height="35pt"
+            android:text="Save"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textSize="12pt"
+            android:onClick="saveDrawing"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150pt"
+        android:layout_height="40pt"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="70pt"
+            android:layout_height="35pt"
+            android:text="Find"
+            android:textSize="12pt"
+            android:layout_marginRight="10pt"
+            android:onClick="filterDrawing"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+
+        <EditText
+            android:layout_width="80pt"
+            android:layout_height="30pt"
+            android:id="@+id/sketchFilterTags"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="145pt"
+        android:id="@+id/mylist"
+        />
+
+    <Button
+        android:layout_width="70pt"
+        android:layout_height="35pt"
+        android:text="Back"
+        android:textSize="11pt"
+        android:layout_gravity="center"
+        android:onClick="returnToHomePage"
+        android:backgroundTint="@android:color/holo_red_dark"
+        />
+
+</LinearLayout>

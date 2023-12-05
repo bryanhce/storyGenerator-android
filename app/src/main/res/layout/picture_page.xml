@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="150pt"
+        android:layout_height="60pt"
+        android:layout_gravity="center"
+        android:layout_marginTop="5pt"
+        android:id="@+id/imageView"
+        />
+
+    <LinearLayout
+        android:layout_width="150pt"
+        android:layout_height="40pt"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="50pt"
+            android:layout_height="25pt"
+            android:textSize="12pt"
+            android:text="Tags:"
+            android:onClick="generateTags"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            />
+
+        <EditText
+            android:layout_width="100pt"
+            android:layout_height="30pt"
+            android:id="@+id/createTags"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150pt"
+        android:layout_height="40pt"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="70pt"
+            android:layout_height="35pt"
+            android:text="Camera"
+            android:textSize="12pt"
+            android:layout_marginRight="10pt"
+            android:backgroundTint="@android:color/holo_purple"
+            android:onClick="launchCamera"
+            />
+
+        <Button
+            android:layout_width="70pt"
+            android:layout_height="35pt"
+            android:text="Save"
+            android:textSize="12pt"
+            android:onClick="saveImage"
+            android:backgroundTint="@android:color/holo_purple"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150pt"
+        android:layout_height="40pt"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="70pt"
+            android:layout_height="35pt"
+            android:text="Find"
+            android:textSize="12pt"
+            android:layout_marginRight="10pt"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:onClick="filterImages"
+            />
+
+        <EditText
+            android:layout_width="80pt"
+            android:layout_height="30pt"
+            android:id="@+id/filterTags"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="145pt"
+        android:id="@+id/mylist"
+        />
+
+    <Button
+        android:layout_width="70pt"
+        android:layout_height="35pt"
+        android:text="Back"
+        android:textSize="11pt"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="returnToHomePage" />
+
+</LinearLayout>

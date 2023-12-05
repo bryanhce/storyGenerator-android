@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+    <CheckBox
+        android:layout_width="17pt"
+        android:layout_height="50pt"
+        android:id="@+id/itemCheckbox"
+        />
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="60pt"
+        android:layout_height="50pt" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="100pt"
+        android:layout_height="50pt"
+        android:textSize="9pt" />
+
+</LinearLayout>
